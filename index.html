@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./null.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+    <title>Интернет-магазин</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <div class="logo">
+            <img src="./img/logo_icon.svg" alt="logo icon" />
+          </div>
+
+          <select class="filter">
+            <option value="">All</option>
+          </select>
+
+          <div class="search">
+            <input class="input-search" type="text" placeholder="Поиск..." />
+            <button class="search-button">
+              <img src="./img/search_icon.svg" alt="search icon" />
+            </button>
+          </div>
+
+          <div class="cart">
+            <button class="cart-button">
+              <img src="./img/cart_icon.svg" alt="cart icon" /> Корзина
+            </button>
+
+            <select class="sort">
+              <option value="1">По умолчанию</option>
+              <option value="2">По цене</option>
+              <option value="3">По названию</option>
+              <option value="4">По популярности</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="product-list"></div>
+
+        <div class="pagination">
+          <button class="pagination-left"> < </button>
+          <span class="pagination-page">1</span>
+          <button class="pagination-right"> > </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Контактная информация: email@example.com | Телефон: +7 (123) 456-78-90
+      </p>
+    </footer>
+
+    <template class="product-template">
+      <div class="product-card">
+        <img class="product-img" src="" alt="Товар 1" />
+        <h2 class="product-title">Товар 1</h2>
+        <p class="product-about">Описание товара 1</p>
+        <p class="product-price">Цена: 1000₽</p>
+        <button class="add-to-cart">Добавить в корзину</button>
+      </div>
+    </template>
+
+    <template class="category-template">
+      <option class="category-option">Категория 1</option>
+    </template>
+  </body>
+</html>
